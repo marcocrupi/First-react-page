@@ -1,1 +1,4 @@
-ReactDOM.render(<h1>Hellooooo</h1>, document.getElementById("root"));
+ReactDOM.render(
+<p>Proviamo a scrivere un paragrafo</p>,
+document.getElementById("root")
+);
