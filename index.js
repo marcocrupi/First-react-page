@@ -1,4 +1,8 @@
 ReactDOM.render(
-<p>Proviamo a scrivere un paragrafo</p>,
+<ul>
+    <li>Ciao mondo</li>
+    <li>lista</li>
+    <li>non ordinata</li>
+</ul>,
 document.getElementById("root")
 );
