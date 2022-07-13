@@ -1,3 +1,15 @@
+// React è un framework dichiarativo e non imperativo https://www.matteospreafico.com/perche-react-2-codice-dichiarativo/
+// 
+// JavaScript è imperativo, ecco unesempio di codice che genera tag html senza usare "innerHTML":
+// const h1 = document.createElement("h1");
+// h1.textContent = "Questo è un modo imperativo di programmare";
+// h1.className = "header";
+// document.getElementById("root").append(h1)
+//
+// Su React che è dichiarativo il risultato sopra visto si ottiene così: 
+// ReactDOM.render(<h1 className="header">Questo è un modo di programmare dichiarativo</h1>, document.getElementById("root"));
+
+
 function MainContent() {
   return <h1>I'm learning React!</h1>;
 }
