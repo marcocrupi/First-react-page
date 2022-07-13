@@ -1,18 +1,13 @@
 // React è un framework dichiarativo e non imperativo https://www.matteospreafico.com/perche-react-2-codice-dichiarativo/
-// 
+//
 // JavaScript è imperativo, ecco unesempio di codice che genera tag html senza usare "innerHTML":
 // const h1 = document.createElement("h1");
 // h1.textContent = "Questo è un modo imperativo di programmare";
 // h1.className = "header";
 // document.getElementById("root").append(h1)
 //
-// Su React che è dichiarativo il risultato sopra visto si ottiene così: 
+// Su React che è dichiarativo il risultato sopra visto si ottiene così:
 // ReactDOM.render(<h1 className="header">Questo è un modo di programmare dichiarativo</h1>, document.getElementById("root"));
-
-
-function MainContent() {
-  return <h1>I'm learning React!</h1>;
-}
 
 function Navbar() {
   return (
@@ -97,10 +92,37 @@ function Navbar() {
   );
 }
 
+function MainContent() {
+  return <h1>I'm learning React!</h1>;
+}
+
+function Ulist() {
+  return (
+    <ul>
+      <li>Pricing</li>
+      <li>About</li>
+      <li>Contact</li>
+    </ul>
+  );
+}
+
+// Quando devo renderizzare più elementi devo usare il tag <div> perché così sarà renderizzato un solo elemento,
+// non importa quanti sottoelementi abbiano.
+// Posso salvare tutto quello che c'è tra i div in una variabile:
+// const page = (
+//   <div>
+//     <h1 className="header">Questo è JSX</h1>
+//     <p>Questo è un paragrafo</p>
+//   </div>
+// );
+
+// ReactDOM.render(page, document.getElementById("root"));
+
 ReactDOM.render(
   <div>
     <Navbar />
     <MainContent />
+    <Ulist />
   </div>,
   document.getElementById("root")
 );
