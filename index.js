@@ -1,8 +1,12 @@
+function MainContent() {
+    return (
+        <h1>I'm learning React!</h1>
+    )    
+}
+
 ReactDOM.render(
-<ul>
-    <li>Ciao mondo</li>
-    <li>lista</li>
-    <li>non ordinata</li>
-</ul>,
-document.getElementById("root")
+    <div>
+    <MainContent />
+    </div>,
+    document.getElementById("root")
 );
